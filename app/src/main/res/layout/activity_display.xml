@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/shownimage"
+        android:layout_width="200dp"
+        android:layout_height="172dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="3px" />
+
+    <TextView
+        android:id="@+id/captionfield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <ListView
+        android:id="@+id/taglist"
+        android:layout_width="match_parent"
+        android:layout_height="65dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation='horizontal'>
+
+        <RadioButton
+            android:id="@+id/locationbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Location" />
+
+        <RadioButton
+            android:id="@+id/personbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Person" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/newtagfield"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Enter Tag "
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addtagbutton"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:text="Add Tag" />
+
+        <Button
+            android:id="@+id/removetagbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remove Tag" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/movebutton"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:text="Move" />
+
+        <Button
+            android:id="@+id/slidebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Slide Show" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="Back" />
+
+</LinearLayout>
